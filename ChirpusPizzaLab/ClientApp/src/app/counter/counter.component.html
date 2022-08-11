@@ -19,7 +19,7 @@
   <tr *ngFor="let currMenuItem of MenuItems" style="color: blue">
     <td align="center" style='padding-left: 15px; padding-right: 15px;'>{{ currMenuItem.ItemName }}</td>
     <td align="center" style='padding-left: 15px; padding-right: 15px;'>{{ currMenuItem.Category }}</td>
-    <td align="center" style='padding-left: 15px; padding-right: 15px;'>{{ '$'+currMenuItem.Price }}</td>
+    <td align="center" style='padding-left: 15px; padding-right: 15px;'>{{ currMenuItem.Price | currency }}</td>
   </tr>
 
   </tbody>
